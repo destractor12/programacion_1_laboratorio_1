@@ -1,13 +1,14 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include "funciones.h"
 
-void pedirDatos(int legajos[],char nombres[][30],int nota1[],int nota2[],float promedio[])
+void pedirDatos(int legajos[],char nombres[][30],int nota1[],int nota2[])
  {
      int i;
      for( i=0;i<3;i++)
     {
         printf("\nIngrese su legajo:");
-        scanf("%d", legajos[i]);
+        scanf("%d", &legajos[i]);
         fflush(stdin);
 
         printf("\nIngrese su nombre:");
@@ -15,10 +16,12 @@ void pedirDatos(int legajos[],char nombres[][30],int nota1[],int nota2[],float p
         fflush(stdin);
 
         printf("\nIngrese su nota:");
-        scanf("%d", nota1[i]);
+        scanf("%d", &nota1[i]);
+        fflush(stdin);
 
         printf("\nIngrese su segunda nota:");
-        scanf("%d", nota2[i]);
+        scanf("%d", &nota2[i]);
+        fflush(stdin);
 
     }
 
@@ -36,18 +39,52 @@ void pedirDatos(int legajos[],char nombres[][30],int nota1[],int nota2[],float p
 
 
   void Mostrarinfo(int legajo[], char nombres[][30], int nota1[], int nota2[], float promedio[])
-       {
+{
             int i;
             for( i=0;i<3;i++)
             {
-                printf("El legajo del alumno es: %d",legajo[i]);
+                printf("\nEl legajo del alumno es: %d",legajo[i]);
 
-                printf("El nombre del alumno es: %s",nombres[i]);
+                printf("\n");
 
-                printf("El legajo del alumno es: %d",nota1[i]);
+                printf("\nEl nombre del alumno es: %s",nombres[i]);
 
-                printf("El legajo del alumno es: %d",nota2[i]);
+                printf("\nLa primer nota del alumno es: %d",nota1[i]);
 
-                printf("El promedio del alumno es: %.2f",promedio[i]);
+                printf("\nLa segunda nota  del alumno es: %d",nota2[i]);
+
+                promedio[i]=calcularPromedio(nota1,nota2);
+
+                printf("\nEl promedio del alumno es: %.2f",promedio[i]);
             }
-       }
+
+
+}
+
+void
+    {
+
+        int i;
+        int j;
+        for(i=0;i<3;i++)
+        {
+            for(j=i+1;j<3-1;j++)
+            if()
+        }
+    }
+
+    int buscarInt(int enteros[],int tam,int cual)
+    {
+        int index=-1;
+        int i;
+
+        for(i=0, i<tam, i++)
+        {
+            if(enteros[i]==cual)
+            {
+                index=i;
+                break
+            }
+        }
+        return index;
+    }
