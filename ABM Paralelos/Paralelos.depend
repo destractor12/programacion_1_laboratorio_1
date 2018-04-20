@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1524236431 source:c:\users\alumno\desktop\abm paralelos\funciones.c
+	<stdlib.h>
+	<stdio.h>
+	"funciones.h"
+
+1524234715 c:\users\alumno\desktop\abm paralelos\funciones.h
+
