@@ -1,0 +1,28 @@
+printf("Ingrese edad: ");
+gets(auxString)
+
+x=validaStringEntero(auxString)
+if(x==1)
+{
+
+	edad= atoi(auxString);
+}
+
+else
+
+{
+
+
+
+}
+
+
+
+
+
+
+¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬¬
+
+int isAlpha(char)
+int isDigit(char)
+int isSpace(char)
