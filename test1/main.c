@@ -3,6 +3,7 @@
 
 int main()
 {
-    printf("Hello world!\n");
+    int opcion;
+
     return 0;
 }
