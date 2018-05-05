@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1524705331 source:z:\multitask\templateresulto por el profe\template\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+	<string.h>
+	"pantalla.h"
+	"utn.h"
+
+1524705528 z:\multitask\templateresulto por el profe\template\pantalla.h
+
+1524691840 z:\multitask\templateresulto por el profe\template\utn.h
+
